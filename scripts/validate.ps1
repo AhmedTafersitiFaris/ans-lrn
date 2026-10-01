@@ -2,6 +2,9 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $lrns = Get-ChildItem (Join-Path $root 'lrns') -Recurse -Filter '*.json'
 $errors = @()
+Get-ChildItem (Join-Path $root 'schemas') -Filter '*.json' | ForEach-Object {
+  try { Get-Content $_.FullName -Raw | ConvertFrom-Json | Out-Null } catch { $errors += "$($_.Name): invalid JSON schema" }
+}
 foreach ($file in $lrns) {
   try { $item = Get-Content $file.FullName -Raw | ConvertFrom-Json } catch { $errors += "$($file.FullName): invalid JSON"; continue }
   foreach ($field in 'id','version','status','title','creator','scope','trigger','procedure','evidence','negative_evidence','limitations','stop_conditions','validation_event_ids') { if ($null -eq $item.$field) { $errors += "$($file.Name): missing $field" } }

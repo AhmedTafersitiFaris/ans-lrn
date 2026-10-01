@@ -6,4 +6,4 @@ Every `*.json` record in `lrns/` must conform to `schemas/lrn.schema.json` and i
 
 The directory is part of the status control: proposals belong in `lrns/proposed`; active records require a linked independent validation event. `lrns/examples/` is reserved for **EXAMPLE — NOT VALIDATED** records and is never a source of runtime knowledge.
 
-LRNs must be explicit about applicable conditions, known failure modes, dependencies, and limits. An LRN cannot self-authorize execution, change governance, or claim truth merely by being stored here.
+LRNs must be explicit about applicable conditions, known failure modes, dependencies, and limits. An LRN cannot self-authorize execution, change governance, or claim truth merely by being stored here. Commercial attributes live in a separate, versioned commercial listing: an LRN version and its economic contract version are different identifiers, and a listing cannot alter governance.

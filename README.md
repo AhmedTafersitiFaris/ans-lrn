@@ -18,6 +18,8 @@ This repository contains no real LRNs. Its sole demonstration artifact is explic
 
 Start with [the creation and validation guide](HOW_TO_CREATE_AND_VALIDATE_AN_LRN.md). The policy sources are [Governance](GOVERNANCE.md), [LRN specification](LRN_SPEC.md), and the [validation protocol](VALIDATION_PROTOCOL.md).
 
+The planned commercial layer is specified in [Economic model](ECONOMIC_MODEL.md), [usage metering](ECONOMIC_USAGE.md), and [marketplace model](LRN_MARKETPLACE.md). It is data and governance only: no payment, wallet, token, cryptocurrency, or blockchain is implemented here.
+
 ## Layout
 
 - `lrns/` — lifecycle-managed LRN JSON records; `lrns/examples/` is demonstration-only.

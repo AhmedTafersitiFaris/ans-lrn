@@ -1,0 +1,21 @@
+{
+  "listing_id": "LIST-0000",
+  "lrn_id": "LRN-0000",
+  "lrn_version": "0.1.0",
+  "governance_state": "validated",
+  "commercial_state": "listed",
+  "economic_contract_version": "0.1.0",
+  "pricing": {
+    "pricing_model": "usage_based",
+    "currency": "FUTURE_POLICY",
+    "unit": "per_use",
+    "price": 0,
+    "effective_from": "2030-01-01T00:00:00Z"
+  },
+  "revenue_distribution": {
+    "creator": "future_policy",
+    "platform": "future_policy",
+    "governance": "future_policy",
+    "review_pool": "future_policy"
+  }
+}

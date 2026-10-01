@@ -12,6 +12,10 @@ Validation records a process decision under the evidence then available. It does
 
 The creator proposes and maintains evidence. An independent validator evaluates the proposal, its evidence, reproducibility, scope, and counterexamples. An auditor may review either the LRN or the decision path; a counter-auditor may challenge an audit. A creator cannot be the sole validator of their own LRN, and a validator cannot audit their own validation. Independence, conflicts, and recusals must be recorded.
 
+## Economic independence
+
+Payment for use does not confer authority, validity, or truth. Demand, price, revenue, and popularity are not evidence of correctness. Validator and auditor compensation, if policy later permits it, is for assigned, documented review work submitted—not for an approval outcome. Financial conflicts must be declared and mitigated before review.
+
 ## Lifecycle
 
 `proposed → testing → validated → active → monitoring → revalidation → correction | suspension | retired`

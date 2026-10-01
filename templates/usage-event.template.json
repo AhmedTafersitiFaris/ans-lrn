@@ -1,0 +1,13 @@
+{
+  "usage_id": "USE-0000",
+  "lrn_id": "LRN-0000",
+  "lrn_version": "0.1.0",
+  "consumer_id": "pseudonymous-or-internal-id",
+  "consumer_type": "api_client",
+  "timestamp": "2030-01-01T00:00:00Z",
+  "usage_type": "invocation",
+  "quantity": 1,
+  "environment": "future-policy-environment",
+  "success": true,
+  "metadata": {}
+}
