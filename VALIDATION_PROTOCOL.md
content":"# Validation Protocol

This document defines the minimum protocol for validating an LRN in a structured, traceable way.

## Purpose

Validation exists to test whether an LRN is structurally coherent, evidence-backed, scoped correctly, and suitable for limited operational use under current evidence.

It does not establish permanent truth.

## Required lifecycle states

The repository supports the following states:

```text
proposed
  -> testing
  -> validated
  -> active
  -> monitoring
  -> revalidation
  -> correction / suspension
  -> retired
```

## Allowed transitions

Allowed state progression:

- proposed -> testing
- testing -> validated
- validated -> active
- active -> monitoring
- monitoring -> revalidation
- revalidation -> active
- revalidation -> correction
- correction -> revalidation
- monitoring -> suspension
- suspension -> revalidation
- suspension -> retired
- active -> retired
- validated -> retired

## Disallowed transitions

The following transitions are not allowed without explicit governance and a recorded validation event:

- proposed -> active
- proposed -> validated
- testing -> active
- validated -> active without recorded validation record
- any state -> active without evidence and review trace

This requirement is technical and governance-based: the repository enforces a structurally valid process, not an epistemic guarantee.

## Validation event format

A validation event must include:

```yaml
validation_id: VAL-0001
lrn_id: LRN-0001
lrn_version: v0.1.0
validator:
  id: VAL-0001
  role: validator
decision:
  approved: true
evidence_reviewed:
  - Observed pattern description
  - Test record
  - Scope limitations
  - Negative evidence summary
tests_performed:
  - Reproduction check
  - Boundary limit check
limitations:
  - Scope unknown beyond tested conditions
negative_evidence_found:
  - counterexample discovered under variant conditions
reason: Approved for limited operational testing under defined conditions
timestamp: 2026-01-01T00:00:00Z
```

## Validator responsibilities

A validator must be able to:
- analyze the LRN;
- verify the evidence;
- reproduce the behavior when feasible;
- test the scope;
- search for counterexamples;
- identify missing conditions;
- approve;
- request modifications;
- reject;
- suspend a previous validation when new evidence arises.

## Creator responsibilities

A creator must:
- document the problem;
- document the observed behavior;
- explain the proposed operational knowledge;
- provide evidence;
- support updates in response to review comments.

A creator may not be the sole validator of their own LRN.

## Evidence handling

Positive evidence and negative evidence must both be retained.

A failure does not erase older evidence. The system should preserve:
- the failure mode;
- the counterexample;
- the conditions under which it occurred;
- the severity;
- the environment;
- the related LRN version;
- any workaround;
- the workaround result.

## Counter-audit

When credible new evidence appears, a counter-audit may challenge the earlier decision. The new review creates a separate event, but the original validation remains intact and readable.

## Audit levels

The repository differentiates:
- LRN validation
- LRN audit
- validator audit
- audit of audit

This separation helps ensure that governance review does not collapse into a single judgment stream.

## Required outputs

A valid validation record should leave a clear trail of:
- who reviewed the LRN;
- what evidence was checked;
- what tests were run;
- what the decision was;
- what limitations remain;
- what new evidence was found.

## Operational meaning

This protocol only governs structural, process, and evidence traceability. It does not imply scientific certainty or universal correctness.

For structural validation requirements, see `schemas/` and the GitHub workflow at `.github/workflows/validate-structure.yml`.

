@@ -1,0 +1,199 @@
+# LRN Specification
+
+This document defines the formal structure and intent of a Learned Runtime Node (LRN).
+
+## Definition
+
+An LRN is:
+
+validated operational knowledge that can be reused by an ANS during runtime.
+
+This definition separates LRN from:
+- a memory note;
+- a raw prompt;
+- a private model artifact;
+- an unverified observation;
+- a permanent rule.
+
+An LRN must distinguish at least the following stages of existence:
+- observation;
+- proposal;
+- implementation;
+- validation;
+- activation.
+
+## Required structure
+
+Each LRN may contain the following fields:
+
+```yaml
+lrn_id: LRN-0001
+version: v0.1.0
+title: Example title
+description: Short description of the observed pattern and intended use
+creator:
+  id: CR-0001
+  name: Creator Name
+  organization: Organization or TBD
+
+domain: example-domains
+authority: TBD
+scope:
+  environment: TBD
+  conditions: TBD
+  limitations: TBD
+trigger: TBD
+context: TBD
+procedure: TBD
+pattern: TBD
+recommendation: TBD
+expected_outcome: TBD
+evidence:
+  observations: []
+  experiments: []
+  historical_cases: []
+  references: []
+provenance: TBD
+dependencies: []
+validation:
+  status: proposed
+  validators: []
+  validation_events: []
+  last_review: TBD
+  next_review: TBD
+negative_evidence: []
+known_failures: []
+confidence: TBD
+rollback: TBD
+retirement_condition: TBD
+created_at: 2026-01-01T00:00:00Z
+updated_at: 2026-01-01T00:00:00Z
+```
+
+## Field meanings
+
+### lrn_id
+A stable identity string such as `LRN-0001`.
+
+### version
+Version identifier. Example: `v0.1.0`. A significant change produces a new version, not silent overwrite.
+
+### title
+Short human-readable title.
+
+### description
+What the LRN is intended to do, where it applies, and why it matters.
+
+### creator
+Identity and provenance details of the proposer.
+
+Fields:
+- `id`: creator identity or registry identifier
+- `name`: human-readable creator name
+- `organization`: organization, team, or `TBD`
+
+### domain
+The domain or area of behavior the LRN addresses.
+
+### scope
+The operational boundary of the LRN.
+
+Required nested fields:
+- `environment`: operating environment or context
+- `conditions`: required conditions or assumptions
+- `limitations`: explicit limits and exclusions
+
+### trigger
+The event, condition, or signal that causes the knowledge to be considered or applied.
+
+### context
+The broader operational or decision context in which the LRN is valid.
+
+### procedure
+A concise description of the operational procedure to be followed.
+
+### pattern
+The pattern, condition, or recurring structure identified by the creator.
+
+### recommendation
+What the system or operator should do after recognizing the trigger and context.
+
+### expected_outcome
+The expected effect or operational result under the defined scope.
+
+### evidence
+Evidence, results, and source material used to justify the proposal.
+
+Nested fields:
+- `observations`: observed facts or recurring evidence
+- `experiments`: tests or structured experiments
+- `historical_cases`: prior case references or analogues
+- `references`: documents, citations, or source links
+
+### provenance
+The lineage of the LRN: source of origin, version history, related records, or process marks.
+
+### dependencies
+Other LRNs, data artifacts, services, or environmental assumptions required for safe usage.
+
+### validation
+Validation status and review history.
+
+Nested fields:
+- `status`: lifecycle status such as `proposed`, `testing`, `validated`, `active`, `suspended`, `retired`
+- `validators`: list of validator identifiers or roles
+- `validation_events`: list of validation record references or IDs
+- `last_review`: timestamp or TBD
+- `next_review`: timestamp or TBD
+
+### negative_evidence
+A structured list of failures, counterexamples, contradictions, and exceptions relevant to the LRN.
+
+### known_failures
+Documented failure modes, tasks or scenarios where the LRN does not perform as expected.
+
+### confidence
+A qualitative or quantitative confidence indicator for the current evidence set, but not a claim of permanent truth.
+
+### rollback
+Procedures or conditions required to revert or neutralize the knowledge if new evidence emerges.
+
+### retirement_condition
+The condition under which the LRN should be suspended or retired.
+
+### created_at
+ISO-8601 timestamp when the LRN record was created.
+
+### updated_at
+ISO-8601 timestamp when the LRN was last modified.
+
+## Lifecycle contract
+
+A valid LRN is expected to preserve the relationship between:
+- observation
+- proposal
+- validation
+- activation
+- monitoring
+- revalidation
+
+The repository requires that an LRN may not be considered active without a recorded validation event.
+
+## Governance requirement
+
+The repository does not treat validation as permanent truth. Validation is an operational state based on current available evidence.
+
+## Non-goals
+
+This specification does not claim that any LRN is universally correct, scientifically accepted, or institutionally certified.
+
+If a fact is not available, use `TBD`, `NOT YET VALIDATED`, or `UNVERIFIED`.
+
+## Related documents
+
+- `README.md`
+- `GOVERNANCE.md`
+- `VALIDATION_PROTOCOL.md`
+- `CONTRIBUTING.md`
+- `schemas/lrn.schema.json`
+

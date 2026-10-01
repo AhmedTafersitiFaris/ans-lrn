@@ -1,0 +1,10 @@
+lrns/validated/README.md
+content":"# Validated LRNs
+
+This directory contains LRNs that have passed process validation and are considered valid under current evidence.
+
+Important:
+- validation is not permanent truth;
+- revalidation remains possible;
+- evidence remains traceable.
+

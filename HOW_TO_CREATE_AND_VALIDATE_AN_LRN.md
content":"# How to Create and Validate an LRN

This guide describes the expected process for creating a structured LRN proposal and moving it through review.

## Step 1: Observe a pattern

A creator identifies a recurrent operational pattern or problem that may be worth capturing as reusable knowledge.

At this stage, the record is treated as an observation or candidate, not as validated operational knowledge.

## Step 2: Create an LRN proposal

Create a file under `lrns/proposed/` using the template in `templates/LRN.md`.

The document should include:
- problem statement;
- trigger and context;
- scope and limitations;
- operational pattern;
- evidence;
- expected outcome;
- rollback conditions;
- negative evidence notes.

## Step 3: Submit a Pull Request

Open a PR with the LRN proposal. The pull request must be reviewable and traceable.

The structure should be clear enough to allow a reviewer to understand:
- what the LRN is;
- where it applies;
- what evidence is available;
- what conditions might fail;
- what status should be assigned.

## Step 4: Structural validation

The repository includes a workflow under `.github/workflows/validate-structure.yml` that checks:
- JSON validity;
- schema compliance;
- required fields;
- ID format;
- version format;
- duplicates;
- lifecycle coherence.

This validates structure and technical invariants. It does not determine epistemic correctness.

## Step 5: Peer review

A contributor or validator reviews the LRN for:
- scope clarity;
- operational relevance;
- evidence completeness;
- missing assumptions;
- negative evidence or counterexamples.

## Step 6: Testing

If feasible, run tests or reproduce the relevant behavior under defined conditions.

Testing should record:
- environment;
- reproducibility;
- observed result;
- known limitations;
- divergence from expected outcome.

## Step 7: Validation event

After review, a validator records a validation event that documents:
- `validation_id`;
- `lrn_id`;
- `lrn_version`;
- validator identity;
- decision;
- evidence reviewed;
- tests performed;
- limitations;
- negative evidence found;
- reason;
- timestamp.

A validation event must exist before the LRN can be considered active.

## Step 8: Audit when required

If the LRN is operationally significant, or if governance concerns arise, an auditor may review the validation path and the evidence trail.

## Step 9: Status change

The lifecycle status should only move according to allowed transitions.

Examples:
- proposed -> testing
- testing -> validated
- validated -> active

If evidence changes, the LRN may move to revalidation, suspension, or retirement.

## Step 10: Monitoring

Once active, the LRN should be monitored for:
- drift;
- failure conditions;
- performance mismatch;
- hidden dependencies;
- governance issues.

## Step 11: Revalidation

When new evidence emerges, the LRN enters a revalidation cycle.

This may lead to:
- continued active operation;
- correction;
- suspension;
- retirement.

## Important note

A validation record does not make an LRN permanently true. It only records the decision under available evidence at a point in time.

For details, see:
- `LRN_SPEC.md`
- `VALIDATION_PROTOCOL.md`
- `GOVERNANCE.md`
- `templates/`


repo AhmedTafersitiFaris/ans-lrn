@@ -1,0 +1,71 @@
+# Architecture
+
+This document describes the architecture of the repository as a foundational governance model for ANS and LRN.
+
+## High-level model
+
+```text
+                 ANS
+                  │
+        ┌─────────┼─────────┐
+        │         │         │
+   perception  reasoning  execution
+        │         │         │
+        └────── feedback ───┘
+                  │
+               learning
+                  │
+                 LRN
+                  │
+          validated knowledge
+                  │
+                 ISA
+          integrity / audit
+```
+
+## Meaning of layers
+
+### ANS
+ANS is the operational nervous system. It is the runtime layer that senses, reasons, decides, executes, and learns.
+
+### LRN
+An LRN is validated operational knowledge that can be reused by an ANS during runtime.
+
+### ISA
+ISA is the integrity, audit, and governance framework. It provides the review and authority layer that constrains and audits operational behavior.
+
+## Separation of concerns
+
+These layers must remain distinguishable:
+
+- ANS is operational.
+- LRN is knowledge.
+- ISA is governance and review.
+
+They are complementary but not interchangeable.
+
+## Why the separation matters
+
+A validated LRN may inform operational decisions, but it does not automatically alter the governance structure or authority boundaries of the system.
+
+An LRN must not become a backdoor to permanent authority or self-approval.
+
+## Repository architecture
+
+The repository is organized to support:
+- LRN proposal and lifecycle tracking;
+- validation records;
+- audit and counter-audit records;
+- evidence preservation;
+- schema-based structural validation;
+- peer review and governance.
+
+## Related documents
+
+- `README.md`
+- `GOVERNANCE.md`
+- `LRN_SPEC.md`
+- `VALIDATION_PROTOCOL.md`
+- `P2P_VALIDATION.md`
+- `super-lrn/README.md`
+

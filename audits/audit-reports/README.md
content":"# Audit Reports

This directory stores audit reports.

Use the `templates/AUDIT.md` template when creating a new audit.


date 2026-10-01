@@ -1,0 +1,14 @@
+audits/README.md
+content":"# Audit Records
+
+This directory stores audit and counter-audit artifacts.
+
+Subdirectories:
+- `audit-reports/`
+- `counter-audits/`
+
+Important rules:
+- original validation must remain intact;
+- audit findings must be reviewable and traceable;
+- counter-audit findings must not erase the original review.
+

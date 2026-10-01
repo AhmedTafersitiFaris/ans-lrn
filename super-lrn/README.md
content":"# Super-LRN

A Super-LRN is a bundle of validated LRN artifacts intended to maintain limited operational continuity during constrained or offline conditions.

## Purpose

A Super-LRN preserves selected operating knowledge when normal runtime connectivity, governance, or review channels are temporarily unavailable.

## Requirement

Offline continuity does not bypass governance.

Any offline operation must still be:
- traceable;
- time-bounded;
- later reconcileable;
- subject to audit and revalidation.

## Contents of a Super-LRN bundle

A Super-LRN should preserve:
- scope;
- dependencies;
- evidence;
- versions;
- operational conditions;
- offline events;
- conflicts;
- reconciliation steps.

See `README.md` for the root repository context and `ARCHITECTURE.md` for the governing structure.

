@@ -1,0 +1,9 @@
+audits/counter-audits/README.md
+content":"# Counter-Audits
+
+This directory stores counter-audit records.
+
+Counter-audits challenge a prior decision without deleting or modifying the original record.
+
+Use the `templates/COUNTER_AUDIT.md` template.
+

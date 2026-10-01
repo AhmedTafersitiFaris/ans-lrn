@@ -1,0 +1,16 @@
+creators/README.md
+content":"# Creator Registry and Guidelines
+
+Creators are responsible for proposing operational knowledge as LRNs.
+
+Creator duties:
+- observe behavior or problems;
+- document the proposed knowledge;
+- provide evidence;
+- update the proposal as feedback arrives;
+- cooperate with validation and governance.
+
+Creator responsibilities do not include sole validation authority over their own proposal.
+
+See `CONTRIBUTING.md` and `LRN_SPEC.md`.
+
