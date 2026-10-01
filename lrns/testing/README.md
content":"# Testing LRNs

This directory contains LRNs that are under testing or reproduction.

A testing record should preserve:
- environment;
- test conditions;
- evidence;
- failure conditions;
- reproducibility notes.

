@@ -1,9 +1,0 @@
-lrns/proposed/README.md
-content":"# Proposed LRNs
-
-This directory is reserved for draft LRN proposals.
-
-Use the template in `templates/LRN.md`.
-
-Proposed LRNs are not assumed valid. They are candidates pending review, testing, and validation.
-

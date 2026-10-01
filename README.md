@@ -1,2 +1,28 @@
-# ans-lrn
-Artificial Nervous System - Learned Runtime Nodes. A framework for formally defining, testing, validating, and governing operational knowledge that can be reused by an ANS during runtime.
+# ANS / LRN Foundation
+
+This repository is the governed registry for reusable operational knowledge.
+
+**ANS** (Artificial Nervous System) perceives, reasons, executes, receives feedback, and learns. **LRN** (Learned Runtime Node) is *validated operational knowledge that can be reused by an ANS during runtime*. **ISA** is the integrity, audit, and governance framework around both.
+
+`ANS = operational nervous system`  
+`LRN = validated operational knowledge`  
+`ISA = integrity / audit / governance`
+
+> Intelligence can recommend. Authority must be granted. Execution must be controlled. Learning must be governed.
+
+An LRN is not a prompt, simple memory, model, model weight, arbitrary instruction, or knowledge automatically true. Validation grants an operational status on available evidence; it never grants permanent truth.
+
+## Foundation status
+
+This repository contains no real LRNs. Its sole demonstration artifact is explicitly **EXAMPLE — NOT VALIDATED** and cannot be activated.
+
+Start with [the creation and validation guide](HOW_TO_CREATE_AND_VALIDATE_AN_LRN.md). The policy sources are [Governance](GOVERNANCE.md), [LRN specification](LRN_SPEC.md), and the [validation protocol](VALIDATION_PROTOCOL.md).
+
+## Layout
+
+- `lrns/` — lifecycle-managed LRN JSON records; `lrns/examples/` is demonstration-only.
+- `validation-events/` and `audits/` — append-only decision records.
+- `schemas/` — machine-readable constraints.
+- `.github/` — least-privilege checks and contribution forms.
+
+Run `powershell -ExecutionPolicy Bypass -File scripts/validate.ps1` before opening a pull request.

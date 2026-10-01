@@ -1,0 +1,15 @@
+{
+  "id": "LRN-0000",
+  "version": "0.1.0",
+  "status": "proposed",
+  "title": "Short operational pattern name",
+  "creator": { "id": "creator-id" },
+  "scope": "Where this applies and does not apply.",
+  "trigger": "Observable condition.",
+  "procedure": ["Bounded step"],
+  "evidence": ["Evidence reference"],
+  "negative_evidence": ["Known counterexample or none observed yet"],
+  "limitations": ["Known limitation"],
+  "stop_conditions": ["When execution must stop or escalate"],
+  "validation_event_ids": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EXAMPLE-NOT-VALIDATED",
+  "version": "0.0.1",
+  "status": "example_not_validated",
+  "title": "EXAMPLE — NOT VALIDATED",
+  "creator": { "id": "foundation-example" },
+  "scope": "Documentation-only illustration; never operational.",
+  "trigger": "None. This must not execute.",
+  "procedure": ["Illustrates the required record shape only."],
+  "evidence": ["No operational evidence; example only."],
+  "negative_evidence": ["Not evaluated."],
+  "limitations": ["Not a real LRN and not eligible for validation or activation."],
+  "stop_conditions": ["Do not use at runtime."],
+  "validation_event_ids": []
+}
