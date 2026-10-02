@@ -1,0 +1,1 @@
+{"validation_id":"VAL-0000","lrn_id":"LRN-0000","lrn_version":"0.1.0","validator_id":"validator-registry-id","validator_role":"VALIDATOR","decision":"REQUEST_CHANGES","evidence_reviewed":[],"tests_performed":[],"negative_evidence_reviewed":[],"limitations":[],"conflicts_of_interest":{"declared":false},"timestamp":"2030-01-01T00:00:00Z"}

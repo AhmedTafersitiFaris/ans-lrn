@@ -1,0 +1,12 @@
+name: New LRN proposal
+description: Create a proposal; this does not validate or activate it.
+title: "LRN proposal: "
+labels: ["lrn-proposal"]
+body:
+  - {type: input, attributes: {label: Creator identity}, validations: {required: true}}
+  - {type: input, attributes: {label: Title}, validations: {required: true}}
+  - {type: input, attributes: {label: Domain}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Scope, description: Include trigger and proposed procedure}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Evidence and limitations}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Negative evidence and dependencies}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Risk and conflict declaration}, validations: {required: true}}

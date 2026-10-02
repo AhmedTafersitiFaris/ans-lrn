@@ -2,6 +2,10 @@
 
 Validation checks structural coherence, evidence traceability, defined scope, reproducibility where feasible, limitations, and counterexamples. It does not establish truth.
 
+## Two distinct layers
+
+Structural validation checks JSON, IDs, versions, timestamps, allowed states, references, and event relationships. It cannot assess evidence sufficiency, world correctness, epistemic quality, or operational authority. Human/operational validation is the separately versioned decision recorded in `validation-events/`; only governance may apply a resulting state transition.
+
 ## Independent review
 
 A validator must not be the creator or a conflicted reviewer. The validation event records identities, conflicts/recusal, reviewed evidence, tests, negative evidence, decision, limits, and timestamp. The required form is `schemas/validation-event.schema.json`.

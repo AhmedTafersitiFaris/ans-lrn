@@ -1,15 +1,1 @@
-{
-  "id": "EXAMPLE-NOT-VALIDATED",
-  "version": "0.0.1",
-  "status": "example_not_validated",
-  "title": "EXAMPLE — NOT VALIDATED",
-  "creator": { "id": "foundation-example" },
-  "scope": "Documentation-only illustration; never operational.",
-  "trigger": "None. This must not execute.",
-  "procedure": ["Illustrates the required record shape only."],
-  "evidence": ["No operational evidence; example only."],
-  "negative_evidence": ["Not evaluated."],
-  "limitations": ["Not a real LRN and not eligible for validation or activation."],
-  "stop_conditions": ["Do not use at runtime."],
-  "validation_event_ids": []
-}
+{"id":"EXAMPLE-NOT-VALIDATED","version":"0.0.1","status":"example_not_validated","title":"EXAMPLE — NOT VALIDATED","creator":{"id":"example-placeholder"},"scope":"Innocuous documentation illustration only; never runtime use.","trigger":"None; execution is prohibited.","input":{"source":"synthetic example","context":"documentation","environment":"non-production","trigger":"none","constraints":["not operational","not monetizable"],"objective":"Show structural fields."},"elaboration":{"processing_method":"illustrative mapping","procedure":["Do not execute."],"pattern":"documentation example","recommendation":"Use only as a schema reference.","processing_version":"example-1"},"output":{"expected_outcome":"A readable example.","observed_outcome":"Not tested.","evidence":["No operational evidence."],"negative_evidence":["Not evaluated."],"counterexamples":["Not applicable."],"limitations":["No real knowledge or validation."],"known_failures":["Cannot be used in production."],"rollback":"Do not activate or list.","retirement_condition":"Always example-only."},"pcc_context":{"objective":"Map input to a constrained documentation output under x_{t+1} = Π_M(B(x_t)).","input_reference":"synthetic-input","candidate_reference":"synthetic-candidate","constraints":["No truth score","No validation shortcut"],"iteration":0,"processing_version":"example-1","output_reference":"synthetic-output"},"validation":{"status":"NOT_VALIDATED","event_refs":[]},"lifecycle":{"current_state":"example_not_validated","transition_refs":[]},"provenance":{"created_at":"2026-10-02T00:00:00Z","source":"repository example"},"commercial_eligibility":"not_eligible"}
