@@ -1,0 +1,20 @@
+{
+  "event_id": "ECO-0000",
+  "event_type": "usage",
+  "mode": "SIMULATION",
+  "lrn_id": "LRN-0000",
+  "lrn_version": "0.1.0",
+  "governance_state": "testing",
+  "commercial_eligibility": "not_eligible",
+  "cost_profile_id": "COST-0000",
+  "cost_profile_version": "0.1.0",
+  "quantity": 1,
+  "gross_minor_units": 0,
+  "resource_cost_minor_units": 0,
+  "allocations_minor_units": { "creator": 0, "platform": 0, "governance": 0, "review_pool": 0 },
+  "remaining_balance_minor_units": 0,
+  "payable_creator_balance_minor_units": 0,
+  "currency": "SIM",
+  "timestamp": "2030-01-01T00:00:00Z",
+  "status": "conceptual"
+}

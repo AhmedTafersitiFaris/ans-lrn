@@ -1,0 +1,20 @@
+{
+  "event_id": "ECO-CELSIUS-FAHRENHEIT-SIMULATION-0001",
+  "event_type": "usage",
+  "mode": "SIMULATION",
+  "lrn_id": "LRN-CELSIUS-FAHRENHEIT-0001",
+  "lrn_version": "0.1.0",
+  "governance_state": "testing",
+  "commercial_eligibility": "not_eligible",
+  "cost_profile_id": "COST-LRN-CELSIUS-FAHRENHEIT-0001",
+  "cost_profile_version": "0.1.0",
+  "quantity": 1000,
+  "gross_minor_units": 200000,
+  "resource_cost_minor_units": 4000,
+  "allocations_minor_units": { "creator": 78400, "platform": 58800, "governance": 39200, "review_pool": 19600 },
+  "remaining_balance_minor_units": 0,
+  "payable_creator_balance_minor_units": 0,
+  "currency": "SIM",
+  "timestamp": "2026-10-06T00:00:00Z",
+  "status": "conceptual"
+}

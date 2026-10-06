@@ -31,3 +31,9 @@ Pricing models are `free`, `fixed`, `usage_based`, `subscription`, `enterprise`,
 Revenue distribution is policy configuration, never hard-coded: `creator`, `platform`, `governance`, `review_pool`. Conceptually: user payment → total revenue → configured shares. Events are conceptual, not financial transactions.
 
 Every listing references one exact LRN ID and LRN version. `economic_contract_version` versions price/distribution terms independently and cannot change the LRN. Review records declare `conflict_of_interest` (`declared`, `type`, `description`, `mitigation`); no real people or conflicts are implied.
+
+## Simulation firewall and cost profiles
+
+Economic records declare `REAL` or `SIMULATION` mode. A simulation is conceptual accounting only: it creates no entitlement, payable balance, invoice, payout, validation, activation, or lifecycle change. A real commercial record is allowed only for an LRN that is commercially eligible and in a policy-allowed governance state.
+
+An LRN Computational Cost Profile is versioned by LRN ID and LRN version. It records resource requirements such as compute, data volume, network, storage, external dependencies, reliability, security, and an execution-frequency assumption. It is not a quality metric or governance signal. Where no allocation policy has been adopted, test fixtures use explicitly labeled simulation-only allocation rates.

@@ -1,0 +1,23 @@
+{
+  "event_id": "ECO-VALIDATOR-REVIEW-REJECT-SIMULATION-0001",
+  "event_type": "validation_compensation",
+  "mode": "SIMULATION",
+  "lrn_id": "LRN-CELSIUS-FAHRENHEIT-0001",
+  "lrn_version": "0.1.0",
+  "governance_state": "testing",
+  "commercial_eligibility": "not_eligible",
+  "cost_profile_id": "COST-LRN-CELSIUS-FAHRENHEIT-0001",
+  "cost_profile_version": "0.1.0",
+  "quantity": 1,
+  "gross_minor_units": 5004,
+  "resource_cost_minor_units": 4,
+  "allocations_minor_units": { "creator": 0, "platform": 0, "governance": 0, "review_pool": 5000 },
+  "remaining_balance_minor_units": 0,
+  "payable_creator_balance_minor_units": 0,
+  "currency": "SIM",
+  "review_work_units": 10,
+  "compensation_rate_minor_units": 500,
+  "review_decision": "REJECT",
+  "timestamp": "2026-10-06T00:00:00Z",
+  "status": "conceptual"
+}

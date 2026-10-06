@@ -1,5 +1,6 @@
 {
   "usage_id": "USE-0000",
+  "mode": "SIMULATION",
   "lrn_id": "LRN-0000",
   "lrn_version": "0.1.0",
   "consumer_id": "pseudonymous-or-internal-id",

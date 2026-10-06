@@ -1,0 +1,9 @@
+{
+  "profile_id": "COST-0000",
+  "profile_version": "0.1.0",
+  "reference_kind": "registered_lrn",
+  "lrn_id": "LRN-0000",
+  "lrn_version": "0.1.0",
+  "resource_units": { "compute": 0, "payload_data_volume": 0, "network": 0, "temporary_storage": 0, "persistent_storage": 0, "external_resource_dependency": 0, "reliability_redundancy": 0, "security_overhead": 0 },
+  "execution_frequency_assumption": 1
+}

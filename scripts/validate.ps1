@@ -57,6 +57,9 @@ Get-ChildItem (Join-Path $root 'audits/counter-audits') -Filter '*.json' | ForEa
   $a=Read-Json $_.FullName; if($a){Require $a @('counter_audit_id','title','original_audit_id','challenge_types','scope','evidence_refs','conflicts_of_interest','timestamp','status') $_.Name; if($a.counter_audit_id -notmatch '^CAUD-[A-Z0-9-]+$'){$errors.Add("Invalid counter-audit ID: $($a.counter_audit_id)")}}
 }
 
+. (Join-Path $root 'scripts/validate-economic.ps1') -Root $root -AsLibrary
+foreach($economicError in (Invoke-EconomicValidation $root)){ $errors.Add($economicError) }
+
 # Required negative lifecycle and separation tests.
 $tests=@(
   @{n='PROPOSED -> TESTING'; ok=(Allowed-Transition 'proposed' 'testing' @() 'c' 'c')},
