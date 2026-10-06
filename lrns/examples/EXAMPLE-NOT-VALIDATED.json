@@ -1,0 +1,16 @@
+{
+  "id": "EXAMPLE-NOT-VALIDATED",
+  "version": "0.0.1",
+  "status": "example_not_validated",
+  "title": "EXAMPLE — NOT VALIDATED",
+  "creator": { "id": "example-placeholder" },
+  "scope": "An innocuous documentation-only example; it must not be used operationally.",
+  "trigger": "None; execution is prohibited.",
+  "procedure": ["Use this record only to understand the public document structure."],
+  "evidence": ["No operational evidence is supplied."],
+  "negative_evidence": ["The example has not been evaluated."],
+  "limitations": ["It does not establish correctness or operational suitability."],
+  "stop_conditions": ["Do not activate, validate, monetize, or use this example at runtime."],
+  "validation_event_ids": [],
+  "commercial_eligibility": "not_eligible"
+}

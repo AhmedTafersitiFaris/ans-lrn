@@ -1,0 +1,14 @@
+name: LRN proposal
+description: Propose bounded operational knowledge for independent review.
+title: "LRN proposal: "
+labels: ["lrn-proposal"]
+body:
+  - type: textarea
+    attributes: {label: Scope, description: Where does this apply and not apply?}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Evidence and counterexamples}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Conflicts, limitations, and stop conditions}
+    validations: {required: true}

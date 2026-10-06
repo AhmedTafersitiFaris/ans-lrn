@@ -1,0 +1,8 @@
+name: Negative evidence
+description: Record a failure without deleting prior evidence.
+title: "Negative evidence: "
+labels: ["negative-evidence"]
+body:
+  - {type: input, attributes: {label: LRN ID and version}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Failure, environment, reproducibility, severity}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Counterexample, workaround, evidence reference}, validations: {required: true}}

@@ -1,0 +1,8 @@
+name: Audit request
+description: Request an audit; this form creates no approval.
+title: "Audit: "
+labels: ["audit"]
+body:
+  - {type: textarea, attributes: {label: Target LRN/version/event and audit type}, validations: {required: true}}
+  - {type: input, attributes: {label: Auditor identity}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Scope, evidence, findings, conflicts, recommendation}, validations: {required: true}}

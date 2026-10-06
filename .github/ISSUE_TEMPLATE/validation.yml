@@ -1,0 +1,12 @@
+name: Human validation request
+description: Request a human decision; submitting this form does not validate an LRN.
+title: "Validation: "
+labels: ["validation-request"]
+body:
+  - {type: input, attributes: {label: LRN ID and version}, validations: {required: true}}
+  - {type: input, attributes: {label: Validator ID}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Tests and evidence reviewed}, validations: {required: true}}
+  - {type: textarea, attributes: {label: Negative evidence and conflicts}, validations: {required: true}}
+  - type: dropdown
+    attributes: {label: Requested decision, options: [APPROVE, REJECT, REQUEST_CHANGES, SUSPEND, REVALIDATE]}
+    validations: {required: true}

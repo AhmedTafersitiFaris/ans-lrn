@@ -1,0 +1,11 @@
+name: Audit or counter-audit
+description: Challenge an LRN, validation decision, or audit with traceable evidence.
+title: "Audit: "
+labels: ["audit"]
+body:
+  - type: textarea
+    attributes: {label: Target and concern}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Evidence and requested outcome}
+    validations: {required: true}

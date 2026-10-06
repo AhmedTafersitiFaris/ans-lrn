@@ -1,0 +1,1 @@
+{"event_id":"STATE-0000","lrn_id":"LRN-0000","lrn_version":"0.1.0","from_state":"proposed","to_state":"testing","actor":"registry-id","actor_role":"CREATOR","reason":"Documented transition reason.","evidence_refs":[],"validation_event_refs":[],"timestamp":"2030-01-01T00:00:00Z"}

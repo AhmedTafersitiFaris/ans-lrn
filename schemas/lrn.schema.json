@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "version", "status", "title", "creator", "scope", "trigger", "procedure", "evidence", "negative_evidence", "limitations", "stop_conditions", "validation_event_ids", "commercial_eligibility"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^(LRN-[A-Z0-9-]+|EXAMPLE-NOT-VALIDATED)$" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "status": { "enum": ["proposed", "testing", "validated", "active", "suspended", "retired", "example_not_validated"] },
+    "title": { "type": "string", "minLength": 1 },
+    "creator": { "type": "object", "required": ["id"], "properties": { "id": { "type": "string", "minLength": 1 } }, "additionalProperties": false },
+    "scope": { "type": "string", "minLength": 1 },
+    "trigger": { "type": "string", "minLength": 1 },
+    "procedure": { "type": "array", "items": { "type": "string" } },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "negative_evidence": { "type": "array", "items": { "type": "string" } },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "stop_conditions": { "type": "array", "items": { "type": "string" } },
+    "validation_event_ids": { "type": "array", "items": { "type": "string" } },
+    "commercial_eligibility": { "enum": ["not_eligible", "eligible_by_policy"] }
+  },
+  "additionalProperties": false
+}
