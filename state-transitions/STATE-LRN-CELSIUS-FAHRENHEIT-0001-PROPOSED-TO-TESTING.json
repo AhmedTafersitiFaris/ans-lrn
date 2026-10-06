@@ -1,0 +1,13 @@
+{
+  "event_id": "STATE-LRN-CELSIUS-FAHRENHEIT-0001-PROPOSED-TO-TESTING",
+  "lrn_id": "LRN-CELSIUS-FAHRENHEIT-0001",
+  "lrn_version": "0.1.0",
+  "from_state": "proposed",
+  "to_state": "testing",
+  "actor": "test-creator-celsius-fahrenheit",
+  "actor_role": "CREATOR",
+  "reason": "Structural conformance completed; direct deterministic test observations recorded for independent human review.",
+  "evidence_refs": ["lrns/testing/LRN-CELSIUS-FAHRENHEIT-TEST-0001.md"],
+  "validation_event_refs": [],
+  "timestamp": "2026-10-06T00:00:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "LRN-CELSIUS-FAHRENHEIT-0001",
+  "version": "0.1.0",
+  "status": "testing",
+  "title": "Celsius to Fahrenheit conversion",
+  "creator": { "id": "test-creator-celsius-fahrenheit" },
+  "scope": "A deterministic repository lifecycle test for converting a numeric Celsius temperature to Fahrenheit; not for production, safety-critical, or authority-bearing use.",
+  "trigger": "A request contains a numeric temperature_celsius value.",
+  "procedure": [
+    "Accept a numeric input named temperature_celsius.",
+    "Return temperature_fahrenheit using the public conversion F = (C × 9/5) + 32.",
+    "Reject missing, null, string, and malformed inputs."
+  ],
+  "evidence": ["lrns/testing/LRN-CELSIUS-FAHRENHEIT-TEST-0001.md"],
+  "negative_evidence": ["lrns/testing/LRN-CELSIUS-FAHRENHEIT-TEST-0001.md records invalid-input rejection observations.", "The repository has no LRN runtime; these observations do not demonstrate ANS runtime execution."],
+  "limitations": ["This candidate does not establish operational correctness, authority, validation, or activation.", "The public LRN schema records the contract as text and does not provide typed input/output fields.", "The tests exercise the public conversion directly, not an ANS execution mechanism."],
+  "stop_conditions": ["Stop if the input is not a finite numeric temperature_celsius value.", "Do not use this candidate outside repository lifecycle testing without human validation."],
+  "validation_event_ids": [],
+  "commercial_eligibility": "not_eligible"
+}
