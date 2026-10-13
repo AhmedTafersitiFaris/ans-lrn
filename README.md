@@ -2,7 +2,7 @@
 
 This repository is the governed registry for reusable operational knowledge.
 
-**ANS** (Artificial Nervous System) perceives, reasons, executes, receives feedback, and learns. **LRN** (Learned Runtime Node) is *validated operational knowledge that can be reused by an ANS during runtime*. **ISA** is the integrity, audit, and governance framework around both.
+**ANS** (Artificial Nervous System) is the planned operational layer for perception, reasoning, controlled execution, feedback and learning. **LRN** (Learned Runtime Node) is *validated operational knowledge that can be reused by an ANS during runtime*. **ISA** is the integrity, audit, and governance framework around both.
 
 `ANS = operational nervous system`  
 `LRN = validated operational knowledge`  
@@ -14,7 +14,13 @@ An LRN is not a prompt, simple memory, model, model weight, arbitrary instructio
 
 ## Foundation status
 
-This repository contains no real LRNs. Its sole demonstration artifact is explicitly **EXAMPLE — NOT VALIDATED** and cannot be activated.
+The registry contains LRN-CELSIUS-FAHRENHEIT-0001 v0.1.0 as a real lifecycle candidate in **testing**, awaiting independent human review. It has no validation event, activation or commercial eligibility.
+
+The demonstration artifact remains **EXAMPLE — NOT VALIDATED** and cannot be activated. Structural and economic simulation checks exist, but there is no ANS execution runtime. Candidate tests do not demonstrate runtime execution.
+
+**VALIDATED != LEGAL TO DEPLOY.** See [Regulatory and deployment boundary](REGULATORY_DEPLOYMENT_BOUNDARY.md).
+
+[Economic Policy v0.1](ECONOMIC_POLICY_V0_1.md) is a **draft for review**, not an adopted price or allocation schedule. Simulation fixtures remain non-policy examples. No real payments are implemented.
 
 ## START HERE
 
